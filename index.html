@@ -141,8 +141,12 @@ a{color:inherit;text-decoration:none;}
   transition:opacity .3s,transform .3s,box-shadow .2s,filter .2s;}
 .wy-video-fab.show{opacity:1;pointer-events:auto;transform:translateY(0);}
 .wy-video-fab:hover{filter:brightness(1.08);box-shadow:0 6px 22px rgba(184,134,11,.55);}
-.wy-video-fab .wy-fab-ico{font-size:12px;}
-@media(max-width:600px){.wy-video-fab{font-size:13px;padding:9px 15px;right:14px;bottom:74px;}}
+.wy-video-fab .wy-fab-ico{font-size:13px;flex:none;}
+.wy-video-fab .wy-fab-txt{display:flex;flex-direction:column;text-align:left;line-height:1.25;}
+.wy-video-fab .wy-fab-l1{font-size:14.5px;font-weight:700;letter-spacing:1.5px;}
+.wy-video-fab .wy-fab-l2{font-size:12px;letter-spacing:1px;opacity:.92;color:#fff7e3;margin-top:1px;}
+@media(max-width:600px){.wy-video-fab{padding:9px 15px;right:14px;bottom:74px;}
+  .wy-video-fab .wy-fab-l1{font-size:13px;} .wy-video-fab .wy-fab-l2{font-size:11px;}}
 
 /* ---------- chapters ---------- */
 .main > .chapter{margin:42px 0 0;}
@@ -497,11 +501,12 @@ a{color:inherit;text-decoration:none;}
 <div data-wytext="n/il0OT/jdKgkJnOkbyRjOzNTMT2kZT5s/rTmeTsyMi9kN6VGI3JzYq839bJ/NeD5FqMwYI="></div>
 </div>
 </main>
-<a class="wy-video-fab" href="#" id="wyVideoFab" rel="noopener" target="_blank" title="觀看本品影音講解"><span class="wy-fab-ico">▶</span><span class="wy-fab-tx"></span></a>
+<a class="wy-video-fab" href="#" id="wyVideoFab" rel="noopener" target="_blank" title="觀看本品影音講解"><span class="wy-fab-ico">▶</span><span class="wy-fab-txt"><span class="wy-fab-l1"></span><span class="wy-fab-l2"></span></span></a>
 <button aria-label="回到頂部" id="backTop">↑</button>
 <script>
 var WY_VIDEOS={1:'https://youtu.be/HuO324zgspQ',2:'https://youtu.be/J16F13hqPyg',3:'https://youtu.be/6dV-NfueU2Q',4:'https://youtu.be/MXmqLJQQ4cM',5:'https://youtu.be/iKB1XJufpPc',6:'https://youtu.be/pFY91DmWv78',7:'https://youtu.be/PZou_kLGm2U',8:'https://youtu.be/plgykKl6PeU',9:'https://youtu.be/Dsg8N9bzMds'};
 var WY_PIN={1:'第一品',2:'第二品',3:'第三品',4:'第四品',5:'第五品',6:'第六品',7:'第七品',8:'第八品',9:'第九品'};
+var WY_NAME={1:'三處往生',2:'往生空義',3:'業生菩薩',4:'化度諸天',5:'梵王請法',6:'三生補處',7:'菩薩道次第',8:'生處利生',9:'釋三類菩薩'};
 /* ---------- sidebar toggle (mobile) ---------- */
 var sb=document.getElementById('sb'), sbToggle=document.getElementById('sbToggle');
 if(sbToggle){sbToggle.addEventListener('click',function(){sb.classList.toggle('open');});}
@@ -568,8 +573,9 @@ function highlight(){
       var url=WY_VIDEOS[p];
       if(url){
         fab.href=url;
-        var tx=fab.querySelector('.wy-fab-tx');
-        if(tx) tx.textContent=(WY_PIN[p]||'本品')+' 影音';
+        var l1=fab.querySelector('.wy-fab-l1'), l2=fab.querySelector('.wy-fab-l2');
+        if(l1) l1.textContent=(WY_PIN[p]||'本品')+' 影音';
+        if(l2) l2.textContent=(WY_NAME[p]||'');
         fab.classList.add('show');
       }else{fab.classList.remove('show');}
     }else{fab.classList.remove('show');}
