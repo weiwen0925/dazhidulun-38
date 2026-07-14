@@ -2141,5 +2141,61 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH38P8:END-->
+<!--WY-BH38P9:BEGIN-->
+<style id="wy-bh38p9-css">
+.bh38p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh38p9-fabbox.show{display:block;}
+.bh38p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh38p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh38p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh38p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh38p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh38p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh38p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh38p9-modal.open{display:flex;}
+.bh38p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh38p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh38p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh38p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh38p9-close:hover{background:#dde2e6;}
+.bh38p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh38p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh38p9-tbl th,.bh38p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh38p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh38p9-tbl thead th:nth-child(1){width:32%;}.bh38p9-tbl thead th:nth-child(2){width:41%;}.bh38p9-tbl thead th:nth-child(3){width:27%;}
+.bh38p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh38p9-guan{background:#eef2f5;color:#37505f;}
+.bh38p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh38p9-tbl tbody tr:nth-child(even) td.bh38p9-guan{background:#e8eef2;}
+.bh38p9-tbl b{color:#8b2500;}
+.bh38p9-guan b{color:#2f6b5a;}
+.bh38p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh38p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh38p9-fabbox{right:14px;}.bh38p9-tbl{font-size:11px;}.bh38p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh38p9-fabbox" id="bh38p9Box"><button class="bh38p9-btn" id="bh38p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh38p9-ic">譯</span><span class="bh38p9-ls"><span class="bh38p9-l1">本品 · 原文·白話·中觀</span><span class="bh38p9-l2">白話翻譯表</span></span></button></div><div class="bh38p9-modal" id="bh38p9Modal" role="dialog" aria-modal="true"><div class="bh38p9-card"><button class="bh38p9-close" id="bh38p9Close" type="button" aria-label="關閉">×</button><h3>卷三十八 · 第9品 白話翻譯表（釋三類菩薩義）</h3><p class="sub">《大智度論》卷三十八 · 第9品 · 釋三類菩薩義 · 原文↔白話↔中觀概念 逐段對照（三類菩薩·乘羊乘馬乘神通三喻·阿彌陀佛因地公案）</p><table class="bh38p9-tbl"><caption>釋三類菩薩義·原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh38p9-src">「舍利弗！有菩薩摩訶薩，初發意時，行六波羅蜜，上菩薩位，得阿毘跋致地。</td><td>「舍利弗！有一類菩薩摩訶薩，在剛發起菩提心的時候，便修行六波羅蜜，逐步上進菩薩之位，證得阿毘跋致（不退轉）地。</td><td class="bh38p9-guan"><b>第一類菩薩·漸修得不退</b>——經文首先標舉第一類菩薩：以六波羅蜜為修行進路，循序漸進，最終證入阿鞞跋致不退轉地，是三類菩薩中修行歷程最為漸次、合乎常理因果的一類，為下文「速度懸殊」的核心疑問樹立參照基準。</td></tr><tr><td class="bh38p9-src">「舍利弗！有菩薩摩訶薩，初發心時，便得阿耨多羅三藐三菩提，轉法輪，與無量阿僧祇眾生作益厚已，入無餘涅槃；是佛般涅槃後，餘法若住一劫，若減一劫。</td><td>「舍利弗！又有一類菩薩摩訶薩，在剛發起菩提心的當下，便證得無上正等正覺，隨即轉動法輪、度化無量阿僧祇的眾生，使他們獲得深厚的利益之後，便入於無餘涅槃；這尊佛般涅槃之後，所留下的教法，或住世一劫，或不滿一劫。</td><td class="bh38p9-guan"><b>第二類菩薩·發心即成佛</b>——經文標舉第二類菩薩：初發心的當下便直接證得無上正等正覺，速度遠遠超越常理因果所能想像的「即身頓成」，是全品最核心的悖論所在——如何在嚴格的緣起因果律下，容許「發心」與「成佛」二者被折疊於同一時刻？</td></tr><tr><td class="bh38p9-src">「舍利弗！有菩薩摩訶薩，初發意時，與般若波羅蜜相應，與無數百千億菩薩，從一佛國至一佛國，為淨佛世界故。」</td><td>「舍利弗！還有一類菩薩摩訶薩，在剛發起菩提心的時候，便與般若波羅蜜相應，與無數百千億的菩薩一起，從一個佛國前往另一個佛國，為的是要莊嚴清淨佛的國土。」</td><td class="bh38p9-guan"><b>第三類菩薩·發心即與般若相應而莊嚴淨土</b>——經文標舉第三類菩薩：發心即與般若波羅蜜相應，不獨自修行，而是與無數菩薩共同遊歷十方佛國，以莊嚴清淨佛土為職志，與第二類菩薩「速入涅槃」的時間取向不同，展現的是空間維度上的莊嚴佛土事業，三類菩薩至此並列完足，構成本品「釋三類菩薩義」的完整文本依據。</td></tr><tr><td class="bh38p9-src">有三種菩薩，利根心堅，未發心前，久來集諸無量福德智慧；是人遇佛，聞是大乘法，發阿耨多羅三藐三菩提心，即時行六波羅蜜，入菩薩位，得阿鞞跋致地。所以者何？先集無量福德，利根心堅，從佛聞法故。</td><td>論主解釋道：這三種菩薩，都是根性銳利、道心堅固的人，在他們尚未發心之前，早已久遠以來積集了無量的福德與智慧；這樣的人一旦遇見佛陀，聽聞這大乘之法，便發起無上正等正覺之心，當下即修行六波羅蜜，證入菩薩之位，得阿鞞跋致地。這是什麼緣故呢？因為他們過去已經積集了無量的福德，根性銳利、道心堅固，又親自從佛陀聽聞正法的緣故。</td><td class="bh38p9-guan"><b>厚積薄發·「即時入位」三因</b>——論主首先破題，指出第一類菩薩「即時入位」看似瞬間，實則背後有三重因緣：先集無量福德（厚積的資糧）、利根心堅（穩固的根性）、從佛聞法（觸發的外緣），三者具足方能感得「即時」入位的果報，徹底排除了偶然、無因而得的可能，彰顯緣起法「因緣具足、果報自現」的法則。</td></tr><tr><td class="bh38p9-src">譬如遠行，或有乘羊而去，或有乘馬而去，或有神通去者。乘羊者久久乃到，乘馬者差速，乘神通者發意頃便到，如是不得言：「發意間云何得到？」神通相爾，不應生疑！菩薩亦如是，發阿耨多羅三藐三菩提時，即入菩薩位。</td><td>論主又以譬喻說明：就好比要遠行到某處，有人騎羊前往，有人騎馬前往，也有人以神通飛行前往。騎羊的人要經過很長時間才能到達，騎馬的人速度稍快，而以神通飛行的人則是發心的當下便已到達；像這樣的情形，不應該質疑說：「怎麼可能一發心就到達了呢？」因為神通的體性本來就是如此，不應心生疑惑！菩薩也是同樣的道理，發起無上正等正覺之心的當下，便證入菩薩之位。</td><td class="bh38p9-guan"><b>乘羊·乘馬·乘神通三喻</b>——論主以遠行的三種交通工具為喻，說明三類菩薩證道速度懸殊，根源在於各自「載具」（根器與資糧）不同，而非違反因果法則：神通飛行者發意即至，正是其自身體性使然，不應以常情妄生疑惑，巧妙化解了「即時成佛」是否違背緣起因果的設難。</td></tr><tr><td class="bh38p9-src">有菩薩初發意，初雖心好，後雜諸惡，時時生念：「我求佛道，以諸功德迴向阿耨多羅三藐三菩提。」是人久久無量阿僧祇劫，或至或不至。先世福德因緣薄，而復鈍根，心不堅固，如乘羊者。</td><td>有一種菩薩剛發起菩提心時，起初雖然心地良善，之後卻夾雜了種種惡念，只是偶爾生起這樣的心念：「我要追求佛道，把種種功德迴向無上正等正覺。」這樣的人，即使歷經無量阿僧祇劫的漫長時間，也是有時能到達、有時不能到達成佛之果。這是因為他過去世所積的福德因緣淺薄，加上根性遲鈍、道心不夠堅固，就好比是騎羊遠行的人一樣。</td><td class="bh38p9-guan"><b>乘羊者的力學特徵·心不堅固故或至或不至</b>——論主具體描繪「乘羊者」的三重特質：初心雖善卻後雜諸惡（動機不純）、福德因緣淺薄（資糧不足）、鈍根心不堅固（根性不穩），三者交織使修行進程反覆震盪，能否成就竟成未定之數，說明「或至或不至」的關鍵並非佛道本身有變數，而是行者自身因緣尚未具足。</td></tr><tr><td class="bh38p9-src">有人前世，少有福德利根，發心漸漸行六波羅蜜，若三、若十、若百阿僧祇劫，得阿耨多羅三藐三菩提；如乘馬者，必有所到。第三乘神通者，如上說。</td><td>又有人前世略有一些福德、根性也還算銳利，發心之後便漸次修行六波羅蜜，或經三阿僧祇劫，或十阿僧祇劫，或百阿僧祇劫，終究證得無上正等正覺；這就好比是騎馬遠行的人，雖然速度不及神通飛行，卻必定能夠到達目的地。至於第三種騎乘神通的情形，如前面所說的一樣。</td><td class="bh38p9-guan"><b>乘馬者·必有所到的漸修保證</b>——與「乘羊者」的「或至或不至」相對，「乘馬者」雖歷經三、十乃至百阿僧祇劫的長時修行，卻是「必有所到」——只要福德利根具足、依六波羅蜜漸次修行，成佛只是時間早晚的問題，並非機率未定之事，凸顯漸修法門「穩定必達」的可貴之處，也回應了第一類菩薩「入位得不退」的完整動力學圖像。</td></tr><tr><td class="bh38p9-src">是三種發心：一者、罪多福少，二者、福多罪少，三者、但行清淨福德。清淨有二種：一者、初發心時，即得菩薩道；二者、小住，供養十方諸佛，通達菩薩道故，入菩薩位，即是阿鞞跋致地。「阿鞞跋致地菩薩」義，如先說。</td><td>論主總結道：以上這三種發心：一是罪業多、福德少，二是福德多、罪業少，三是只行清淨的福德。而「只行清淨福德」這一種又可以分為兩類：一類是初發心的當下，就已經證得菩薩之道；另一類則需稍微停留一段時間，供養十方諸佛，藉此通達菩薩之道，才證入菩薩之位，也就是阿鞞跋致地。「阿鞞跋致地菩薩」的義理，已經如前面所說過的一樣。</td><td class="bh38p9-guan"><b>總攝三種發心·收束第一類菩薩之全貌</b>——論主以「罪福多寡」為總判準，將前述羊、馬、神通三喻收攝為「三種發心」的義理架構，並進一步將「清淨福德」一類再分二支（即時入位／小住供佛而後入位），至此第一類菩薩「入位得不退」的完整動力學圖像宣告完整，也為下文轉入第二類菩薩「初發心便成佛」的更深悖論預留伏筆。</td></tr><tr><td class="bh38p9-src">次後菩薩，大厭世間，世世已來，常好真實，惡於欺誑。是菩薩亦利根、堅心，久集無量福德、智慧。初發心時，便得阿耨多羅三藐三菩提，即轉法輪，度無量眾生，入無餘涅槃；法住若一劫、若減一劫，留化佛度眾生。佛有二種神通力：一者、現在時，二者、滅後。「劫」義，如上說。劫中所度眾生，亦復不少！</td><td>其次一類菩薩，對世間生起深切的厭離之心，累世以來，向來喜好真實，厭惡虛偽欺誑。這樣的菩薩同樣是根性銳利、道心堅固，長久以來積集了無量的福德與智慧。他在剛發起菩提心的當下，便證得無上正等正覺，隨即轉動法輪，度化無量的眾生，然後入於無餘涅槃；正法住世或滿一劫，或不滿一劫，並留下化身佛繼續度化眾生。佛有兩種神通力：一是佛還住世時的神通力，一是佛滅度之後的神通力。「劫」的意義，如同前面所說過的一樣。在這一劫之中，所度化的眾生，數量也絕對不少！</td><td class="bh38p9-guan"><b>第二類菩薩之因·常好真實惡於欺誑</b>——論主終於揭示第二類菩薩「初發心即成佛」的核心內驅力：不在於神秘的偶然，而在於「常好真實、惡於欺誑」的直心特質——真實與欺誑正是兩種相反的心理動能，前者使福德智慧的能量毫無耗損地直趨佛果，後者則使能量在自我糾纏中不斷回彈耗散。此菩薩成佛之後雖速入無餘涅槃，卻以「住世」與「滅後」二種神通力，藉留化身佛的方式延續度生事業，說明看似「大厭世間、速求寂滅」的取向，實則暗含跨越時間的慈悲救度機制，非棄捨眾生之義。</td></tr><tr><td class="bh38p9-src">次後菩薩，亦利根、心堅，久集福德；發心即與般若波羅蜜相應，得六神通；與無量眾生，共觀十方清淨世界，而自莊嚴其國。</td><td>再其次一類菩薩，同樣是根性銳利、道心堅固，長久以來積集福德；他一發心便與般若波羅蜜相應，證得六神通；與無量的眾生一同遍觀十方清淨世界，藉此莊嚴自己未來所成就的佛國淨土。</td><td class="bh38p9-guan"><b>第三類菩薩之因·與般若相應而莊嚴淨土</b>——與第二類菩薩「速入涅槃、以時間維度留法度生」不同，第三類菩薩發心即與般若波羅蜜相應，選擇的是「空間維度」的度生策略：不急於入滅，而是與無量眾生共同遍觀十方清淨世界，採擷諸佛國土的莊嚴功德，以莊嚴自身未來所成就的佛土，是一種攝受眾生於清淨佛國、長遠廣度的菩薩行願。</td></tr><tr><td class="bh38p9-src">如阿彌陀佛，先世時作法藏比丘，佛將導遍至十方，示清淨國，令選擇淨妙之國，以自莊嚴其國。</td><td>就好比阿彌陀佛，過去世曾經身為法藏比丘的時候，佛親自引導他遍歷十方世界，示現種種清淨的佛國，讓他從中選擇最為清淨美妙的國土，來莊嚴自己未來所要成就的佛國淨土。</td><td class="bh38p9-guan"><b>阿彌陀佛因地公案·淨土莊嚴之典範</b>——論主以阿彌陀佛因地為法藏比丘、蒙佛引導遍觀十方清淨國土、擇取最勝莊嚴以成就極樂世界的公案作結，為第三類菩薩「與般若相應、共觀十方而自莊嚴其國」的抽象義理提供了最具體、最為人熟知的實證典範，總收全品三類菩薩義的論述。</td></tr></tbody></table><p class="bh38p9-note">本表為卷三十八第9品「釋三類菩薩義」原典部分的原文·白話·中觀三欄對照：經文標舉三類初發意菩薩——漸修得不退、發心即成佛、發心即與般若相應而莊嚴淨土；論主依次以「厚積薄發三因」「乘羊乘馬乘神通三喻」解第一類，以「常好真實惡於欺誑」解第二類，以阿彌陀佛因地法藏比丘公案解第三類。原文取自 dazhidulun-38 站內 L1 加密原典第九品（依實際位移順序收錄，經三段在最頂、論八段次之；原文中被拆為前後二段以省略號銜接的同一段「常好真實」原典已合併復原為一段，不留省略號殘片）。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh38p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh38p9Btn"),BOX=document.getElementById("bh38p9Box"),MODAL=document.getElementById("bh38p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+var CBOX=document.getElementById("c38p9Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh38p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH38P9:END-->
 </body>
 </html>
