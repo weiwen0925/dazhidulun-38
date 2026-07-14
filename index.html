@@ -2029,5 +2029,61 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH38P6:END-->
+<!--WY-BH38P7:BEGIN-->
+<style id="wy-bh38p7-css">
+.bh38p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh38p7-fabbox.show{display:block;}
+.bh38p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh38p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh38p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh38p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh38p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh38p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh38p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh38p7-modal.open{display:flex;}
+.bh38p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh38p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh38p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh38p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh38p7-close:hover{background:#dde2e6;}
+.bh38p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh38p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh38p7-tbl th,.bh38p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh38p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh38p7-tbl thead th:nth-child(1){width:32%;}.bh38p7-tbl thead th:nth-child(2){width:41%;}.bh38p7-tbl thead th:nth-child(3){width:27%;}
+.bh38p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh38p7-guan{background:#eef2f5;color:#37505f;}
+.bh38p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh38p7-tbl tbody tr:nth-child(even) td.bh38p7-guan{background:#e8eef2;}
+.bh38p7-tbl b{color:#8b2500;}
+.bh38p7-guan b{color:#2f6b5a;}
+.bh38p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh38p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh38p7-fabbox{right:14px;}.bh38p7-tbl{font-size:11px;}.bh38p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh38p7-fabbox" id="bh38p7Box"><button class="bh38p7-btn" id="bh38p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh38p7-ic">譯</span><span class="bh38p7-ls"><span class="bh38p7-l1">本品 · 原文·白話·中觀</span><span class="bh38p7-l2">白話翻譯表</span></span></button></div><div class="bh38p7-modal" id="bh38p7Modal" role="dialog" aria-modal="true"><div class="bh38p7-card"><button class="bh38p7-close" id="bh38p7Close" type="button" aria-label="關閉">×</button><h3>卷三十八 · 第7品 白話翻譯表（中觀視域下的菩薩道次第）</h3><p class="sub">《大智度論》卷三十八 · 第7品 · 中觀視域下的菩薩道次第 · 原文↔白話↔中觀概念 逐段對照（兩種神通·生身法身·悲增上智增上 一問一答）</p><table class="bh38p7-tbl"><caption>中觀視域下的菩薩道次第·原文｜白話翻譯｜中觀概念（共10段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh38p7-src">「復次，舍利弗！有菩薩摩訶薩得六神通，不生欲界、色界、無色界；從一佛國至一佛國，供養恭敬尊重讚歎諸佛。</td><td>「其次，舍利弗！有一類菩薩摩訶薩證得六種神通，不再投生於欲界、色界、無色界之中；而是從一個佛國前往另一個佛國，供養、恭敬、尊重、讚歎諸佛。</td><td class="bh38p7-guan"><b>六神通·超越三界的自利莊嚴</b>——此類菩薩以六神通斷除三界繫縛，遊歷十方佛國供養諸佛，展現的是「超出系統之外」的自利莊嚴一面，為下文「生身／法身」二分埋下伏筆。</td></tr><tr><td class="bh38p7-src">「舍利弗！有菩薩摩訶薩遊戲神通，從一佛國至一佛國，所至到處，無有聲聞、辟支佛乘，乃至無二乘之名。</td><td>「舍利弗！又有一類菩薩摩訶薩以遊戲神通自在往來，從一個佛國前往另一個佛國，凡是所到之處，都沒有聲聞、辟支佛乘，甚至連二乘之名都不存在。</td><td class="bh38p7-guan"><b>遊戲神通·所至皆一乘清淨</b>——「遊戲」二字彰顯此類菩薩神通運用的自在無礙，所至之處純為一乘（唯一佛乘）清淨之地，不立二乘之名，隱含以般若中道統攝三乘方便、直趣佛果之義。</td></tr><tr><td class="bh38p7-src">「舍利弗！有菩薩摩訶薩遊戲神通，從一佛國至一佛國，所至到處，其壽無量。</td><td>「舍利弗！這類以遊戲神通往來的菩薩摩訶薩，所到之處，眾生的壽命都無量無邊。</td><td class="bh38p7-guan"><b>壽命無量·度生時劫無盡</b>——所至世界壽量無邊，象徵菩薩度生事業不受時間局限，呼應中觀「時劫如幻、不可定量」之義，亦為攝受眾生久修佛道預留充裕的時間場域。</td></tr><tr><td class="bh38p7-src">「舍利弗！有菩薩摩訶薩遊戲神通，從一佛國至一佛國，所至到處，有無佛、法、僧處，讚佛、法、僧功德；諸眾生等以聞佛名、法名、僧名故，於此命終，生諸佛前。」</td><td>「舍利弗！這類菩薩摩訶薩以遊戲神通，從一個佛國前往另一個佛國，凡是到達沒有佛、法、僧三寶的地方，便讚歎佛、法、僧三寶的功德；當地眾生因為聽聞了佛名、法名、僧名的緣故，命終之後，便得以往生到諸佛面前。」</td><td class="bh38p7-guan"><b>無佛處讚三寶·以名字接引下化</b>——菩薩深入三寶不存之處主動宣揚三寶功德，僅憑「聞名」的因緣便能令眾生命終往生佛前，顯示遊戲神通一支的核心用意在於利他度生，與前段六神通一支的自利供佛恰成對比，呼應下文「生身／法身」二種菩薩之判。</td></tr><tr><td class="bh38p7-src">釋曰：菩薩有二種：一者、生身菩薩，二者、法身菩薩。一者、斷結使，二者、不斷結使。</td><td>論主解釋道：菩薩有兩種：一種是生身菩薩，一種是法身菩薩；又依斷惑與否而言，一種是已經斷除煩惱結使的，一種是尚未斷除煩惱結使的。</td><td class="bh38p7-guan"><b>生身·法身二分·以斷惑為判準</b>——論主承接經文兩種神通之相，提出「生身／法身」的判教架構，並以「斷結使與否」作為區分的根本標準，將前文兩種神通境界收攝為明確的菩薩位階判準。</td></tr><tr><td class="bh38p7-src">法身菩薩斷結使，得六神通；生身菩薩不斷結使，或離欲得五神通。</td><td>法身菩薩已經斷除煩惱結使，因而證得六神通；生身菩薩尚未斷除煩惱結使，有的僅是離開欲界貪愛而證得五神通。</td><td class="bh38p7-guan"><b>斷結得六通·未斷得五通</b>——具體對應經文「得六神通」一句：唯有斷盡結使的法身菩薩方能圓滿六通（含漏盡通），生身菩薩縱使離欲修證，至多僅得五神通（不含漏盡通），凸顯「斷惑」是六通與五通的關鍵分水嶺。</td></tr><tr><td class="bh38p7-src">「得六神通」者，不生三界，遊諸世界，供養十方諸佛。</td><td>經文所說的「證得六神通」，是指這類菩薩不再受生於三界之中，而是遊歷十方一切世界，供養十方諸佛。</td><td class="bh38p7-guan"><b>釋「得六神通」句</b>——論主逐句注解經文，說明「得六神通」正是對應前文法身菩薩「不生三界、遊歷供佛」之相，將經文與論義緊密扣合。</td></tr><tr><td class="bh38p7-src">「遊戲神通」者，到十方世界度眾生，雨七寶；所至世界，皆一乘清淨，壽無量阿僧祇劫。</td><td>經文所說的「遊戲神通」，是指菩薩到十方世界去度化眾生，並能降下七寶；凡是所到達的世界，都是一乘清淨的世界，眾生壽命長達無量阿僧祇劫。</td><td class="bh38p7-guan"><b>釋「遊戲神通」句·雨寶度生</b>——論主解釋「遊戲神通」的具體作用是入世度眾、雨降七寶利樂有情，且所至世界皆一乘清淨、壽命無量，呼應經文第二至第四段，完整收束對兩種神通之相的注釋。</td></tr><tr><td class="bh38p7-src">問曰：菩薩法應度眾生，何以但至清淨無量壽佛世界中？</td><td>問道：菩薩之法本應以度化眾生為本務，為什麼經文所說的菩薩卻只前往清淨、壽命無量的佛的世界之中呢？</td><td class="bh38p7-guan"><b>設難·自利求淨土與利他度眾之兩難</b>——此問直指全品核心張力：菩薩理應以入世度生為己任，若只求往生清淨無量壽世界，豈非偏向自利、捨棄利他本懷？這一問開啟全品「悲增上／智增上」兩型菩薩戰略分流的討論。</td></tr><tr><td class="bh38p7-src">答曰：菩薩有二種：一者、有慈悲心，多為眾生；二者、多集諸佛功德。樂多集諸佛功德者，至一乘清淨無量壽世界；好多為眾生者，至無佛法眾處，讚歎三寶之音，如後章說。</td><td>答道：菩薩有兩種：一種是慈悲心特別深重，多半致力於利益眾生；一種則是著重廣集諸佛的功德。喜好廣集諸佛功德的這一種，便前往一乘清淨、壽命無量的世界；喜好多多利益眾生的這一種，便前往沒有佛法之處，在那裡讚歎三寶的音聲，詳細內容如後文所說。</td><td class="bh38p7-guan"><b>悲增上與智增上·二型並立不相礙</b>——論主以「慈悲多為眾生」與「多集諸佛功德」二型菩薩化解設難：往生清淨世界並非棄捨眾生，而是「智增上」一系菩薩積集功德、莊嚴自身以厚植度生根本的階段性策略，與「悲增上」直入穢土度眾的一系並行不悖，二者是任務分工而非高下之別，此即下文「邏輯分流」章節的立論根基。</td></tr></tbody></table><p class="bh38p7-note">本表為卷三十八第7品「中觀視域下的菩薩道次第」原典部分的原文·白話·中觀三欄對照：經文先舉六神通、遊戲神通兩種菩薩相，論主釋為生身菩薩、法身菩薩二種並以斷結使與否判其六通五通之別；末以一問一答闡明「菩薩法應度眾生，何以但至清淨無量壽佛世界」之設難，答以慈悲多為眾生、多集諸佛功德二型菩薩並立不相礙。原文取自 dazhidulun-38 站內 L1 加密原典第七品（依實際位移順序收錄，經在最頂、論次之、問在答前、有問必有答）。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh38p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh38p7Btn"),BOX=document.getElementById("bh38p7Box"),MODAL=document.getElementById("bh38p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+var CBOX=document.getElementById("c38p7Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh38p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH38P7:END-->
 </body>
 </html>
