@@ -1861,5 +1861,61 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH38P3:END-->
+<!--WY-BH38P4:BEGIN-->
+<style id="wy-bh38p4-css">
+.bh38p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh38p4-fabbox.show{display:block;}
+.bh38p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh38p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh38p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh38p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh38p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh38p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh38p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh38p4-modal.open{display:flex;}
+.bh38p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh38p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh38p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh38p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh38p4-close:hover{background:#dde2e6;}
+.bh38p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh38p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh38p4-tbl th,.bh38p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh38p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh38p4-tbl thead th:nth-child(1){width:32%;}.bh38p4-tbl thead th:nth-child(2){width:41%;}.bh38p4-tbl thead th:nth-child(3){width:27%;}
+.bh38p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh38p4-guan{background:#eef2f5;color:#37505f;}
+.bh38p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh38p4-tbl tbody tr:nth-child(even) td.bh38p4-guan{background:#e8eef2;}
+.bh38p4-tbl b{color:#8b2500;}
+.bh38p4-guan b{color:#2f6b5a;}
+.bh38p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh38p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh38p4-fabbox{right:14px;}.bh38p4-tbl{font-size:11px;}.bh38p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh38p4-fabbox" id="bh38p4Box"><button class="bh38p4-btn" id="bh38p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh38p4-ic">譯</span><span class="bh38p4-ls"><span class="bh38p4-l1">本品 · 原文·白話·中觀</span><span class="bh38p4-l2">白話翻譯表</span></span></button></div><div class="bh38p4-modal" id="bh38p4Modal" role="dialog" aria-modal="true"><div class="bh38p4-card"><button class="bh38p4-close" id="bh38p4Close" type="button" aria-label="關閉">×</button><h3>卷三十八 · 第4品 白話翻譯表（菩薩化度欲界諸天考）</h3><p class="sub">《大智度論》卷三十八 · 第4品 · 菩薩化度欲界諸天考 · 原文↔白話↔中觀概念 逐段對照（欲界諸天化度之辯·方便力對治著心）</p><table class="bh38p4-tbl"><caption>菩薩化度欲界諸天考·原文｜白話翻譯｜中觀概念（共3段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh38p4-src">「舍利弗！復有菩薩摩訶薩，入初禪乃至第四禪，入慈心乃至捨，入空處乃至非有想非無想處，以方便力故不隨禪生；或生四天王天處，或生三十三天，夜摩天、兜率陀天、化樂天、他化自在天。於是中成就眾生、亦淨佛世界，常值諸佛。」</td><td>「舍利弗！還有菩薩摩訶薩，證入初禪乃至第四禪，入慈心乃至捨心（四無量心），入空處乃至非有想非無想處（四空定），憑藉方便力的緣故不隨著禪定的果報受生；而是或投生到四天王天，或投生到三十三天、夜摩天、兜率陀天、化樂天、他化自在天。在這些天處成就眾生、也莊嚴清淨佛的世界，並且常常值遇諸佛。」</td><td class="bh38p4-guan"><b>方便力·不隨禪生</b>——菩薩雖證得深妙禪定（初禪乃至非想非非想），卻不被禪定業力牽引受生，而是以般若方便力自主選擇投生欲界諸天以度化眾生，正顯示「禪定」與「大悲方便」二者不相妨礙、定慧雙運的中觀要義。</td></tr><tr><td class="bh38p4-src">問曰：欲界諸天，情著五欲，難可化度，菩薩何以生彼，而不生人中？</td><td>問道：欲界的諸天眾生貪著五欲，是很難教化度脫的，菩薩為什麼要投生到那裡，而不投生到人間呢？</td><td class="bh38p4-guan"><b>設難·欲界難化何以偏往</b>——此問承接上文「三處往生」，進一步聚焦於欲界諸天，質疑菩薩捨易（人中）就難（天上）的選擇是否恰當，是本品「核心悖論」的起點。</td></tr><tr><td class="bh38p4-src">答曰：諸天著心雖大，菩薩方便力亦大。如說三十三天上，有須浮摩樹林，天中聖天，厭捨五欲，在中止住，化度諸天。兜率天上，恒有一生補處，諸菩薩常得聞法。密迹金剛力士，亦在四天王天上。如是等教化諸天。</td><td>答道：諸天眾生貪著五欲的心雖然強烈，但菩薩度化的方便力也同樣強大。譬如經上說，三十三天上有須浮摩樹林，天界中有聖潔的天人厭離捨棄五欲，安住在那裡，教化度脫諸天。兜率天上經常有一生補處的菩薩，使諸天人常常得以聽聞佛法。密跡金剛力士，也常駐在四天王天上。像這樣的種種安排，都是為了教化諸天。</td><td class="bh38p4-guan"><b>方便力對治著心·處而能化</b>——論主以須浮摩樹林聖天、兜率一生補處、密迹金剛力士三例回應設難：菩薩的方便力足以與天人的貪著心相抗衡，正是「入水不濕」精神在欲界諸天的具體展開，呼應全品「硬體軟體非同步」與「處而不染」的核心洞見。</td></tr></tbody></table><p class="bh38p4-note">本表為卷三十八第4品「菩薩化度欲界諸天考」原典部分的原文·白話·中觀三欄對照：經文開示菩薩以方便力不隨禪生，選擇投生欲界諸天（四天王天乃至他化自在天）成就眾生、淨佛世界；論主自設一問——欲界諸天情著五欲、難可化度，菩薩何以生彼而不生人中？答以諸天著心雖大、菩薩方便力亦大，並舉三十三天須浮摩樹林聖天、兜率一生補處菩薩、密迹金剛力士三例為證。原文取自 dazhidulun-38 站內 L1 加密原典第四品（依實際位移順序收錄，經在最頂、問在答前、有問必有答）。白話忠於原意、不增不減；中觀欄標出各段所涉的中觀義理。</p></div></div>
+<script id="wy-bh38p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh38p4Btn"),BOX=document.getElementById("bh38p4Box"),MODAL=document.getElementById("bh38p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+var CBOX=document.getElementById("c38p4Box");
+function place(){
+  var b=null;
+  if(CBOX){var st=getComputedStyle(CBOX);var r=CBOX.getBoundingClientRect();if(st.position==="fixed"&&r.height>0&&st.display!=="none")b=Math.round(window.innerHeight-r.top)+8;}
+  if(b===null){var eb=document.querySelector(".wy-ebox");if(eb){var er=eb.getBoundingClientRect();if(er.height>4)b=Math.round(window.innerHeight-er.top)+8;}}
+  if(b===null)b=150;
+  BOX.style.bottom=b+"px"; /*BHPLACE*/
+}
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh38p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH38P4:END-->
 </body>
 </html>
